@@ -1,0 +1,45 @@
+# ls 
+alias l=ls
+alias ls="ls -G" # G: color
+alias ll="ls -alh" # a: all; l: long format; h: humane-readable; 
+
+# cd
+alias ~='cd .'
+alias ..='cd ..'
+alias ....='cd ../..'
+
+# open
+OS_NAME=`uname -s` # if Mac OS X: Darwin
+if [ OS_NAME == 'Darwin']; then
+	alias o='open'
+	alias 0='open .'
+fi
+
+# ssh
+
+# clear
+alias c='clear'
+
+# python
+alias p='python'
+
+# vim
+alias v='vim'
+
+# sublime text
+if [ OS_NAME == 'Darwin']; then	
+	alias s='subl'
+fi
+
+# quit, exit
+alias quit='exit'
+alias q='exit'
+
+# tree
+alias t='tree -Cs' # s: size of each file; C: color
+
+# reset
+alias r="reset" 
+
+# gcc
+alias gcc='gcc -pipe -g -Wall'

@@ -1,21 +1,9 @@
+# bash settings
 export PS1='[\u]@\h:\W\!\$'
 export HISTFILESIZE=500000
 export HISTSIZE=500000
-alias  ls="ls -G"
-alias   l=ls
-alias ll="ls -al"
-alias c=clear
-export PATH=/opt/iOSOpenDev/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/texbin:/Users/yy/bin
-alias 9c="ssh cs9c-aq@akane.cs.berkeley.edu"
-alias r="reset" 
-akane="cs9c-aq@akane.cs.berkeley.edu"
-alias gcc='gcc -pipe -g -Wall'
-alias nova="ssh cs9c-aq@nova.cs.berkeley.edu"
-alias python3=python3.3
-alias p="python3.3 -i"
-alias pt='python3.3 -m doctest -v'
-alias gate='ssh zz@192.168.1.100'
-alias a='ssh cs61a-pb@nova.cs.berkeley.edu'
-alias g="cd ~/ants;python3 ~/ants/ants_gui.py;cd -"
-alias t="cd ~/ants;python3 tests.py -v;cd -"
-alias t9="cd ~/ants;clear; python3 -m unittest -v tests.TestProblem9; cd - "
+
+# alias
+if [ -e ~/.bash_alias ]; then
+	source ~/.bash_alias
+fi
